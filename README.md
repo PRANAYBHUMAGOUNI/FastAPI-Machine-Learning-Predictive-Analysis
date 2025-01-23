@@ -5,6 +5,29 @@ This project is a machine learning application built with FastAPI that predicts 
 
 ## Dataset Description
 
+### Dataset Overview
+
+**Total Rows:** 2,500
+**Total Columns:** 16
+
+### Sample Data
+
+The sample data contains various machine parameters recorded at different times. Below is an sample of the dataset:
+
+| Date       | Machine_ID         | Assembly_Line_No | Hydraulic_Pressure(bar) | Coolant_Pressure(bar) | Air_System_Pressure(bar) | Coolant_Temperature | Hydraulic_Oil_Temperature(°C) | Spindle_Bearing_Temperature(°C) | Spindle_Vibration(m) | Tool_Vibration(m) | Spindle_Speed(RPM) | Voltage(volts) | Torque(Nm) | Cutting(kN) | Downtime        |
+|------------|--------------------|------------------|-------------------------|-----------------------|--------------------------|--------------------|------------------------------|---------------------------------|----------------------|-------------------|-------------------|----------------|------------|-------------|-----------------|
+| 31-12-2021 | Makino-L1-Unit1-2013 | Shopfloor-L1     | 71.04                   | 6.9337                | 6.285                    | 25.6               | 46                           | 33.4                            | 1.291                | 26.492            | 25892             | 335            | 24.06      | 3.58        | Machine_Failure |
+| 31-12-2021 | Makino-L1-Unit1-2013 | Shopfloor-L1     | 125.33                  | 4.9369                | 6.197                    | 35.3               | 47.4                         | 34.6                            | 1.382                | 25.274            | 19856             | 368            | 14.20      | 2.68        | Machine_Failure |
+| 31-12-2021 | Makino-L3-Unit1-2015 | Shopfloor-L3     | 71.12                   | 6.8394                | 6.655                    | 13.1               | 40.7                         | 33                              | 1.319                | 30.608            | 19851             | 325            | 24.05      | 3.55        | Machine_Failure |
+| 31-05-2022 | Makino-L2-Unit1-2015 | Shopfloor-L2     | 139.34                  | 4.5744                | 6.560                    | 24.4               | 44.2                         | 40.6                            | 0.618                | 30.791            | 18461             | 360            | 25.86      | 3.55        | Machine_Failure |
+| 31-03-2022 | Makino-L1-Unit1-2013 | Shopfloor-L1     | 60.51                   | 6.8932                | 6.141                    | 4.1                | 47.3                         | 31.4                            | 0.983                | 25.516            | 26526             | 354            | 25.52      | 3.55        | Machine_Failure |
+| 31-03-2022 | Makino-L2-Unit1-2015 | Shopfloor-L2     | 137.37                  | 5.9184                | 7.228                    | 5.4                | 48                           | 32.7                            | 0.903                | 25.597            | 27613             | 319            | 25.52      | 3.55        | Machine_Failure |
+| 31-03-2022 | Makino-L1-Unit1-2013 | Shopfloor-L1     | 135.93                  | 6.5603                | 6.711                    | 19.3               | 48.8                         | 37.4                            | 1.24                 | 32.138            | 26605             | 438            | 25.45      | 3.58        | Machine_Failure |
+| 31-03-2022 | Makino-L3-Unit1-2015 | Shopfloor-L3     | 127.72                  | 5.0607                | 6.002                    | 20.8               | 45.8                         | 37.5                            | 1.125                | 19.823            | 14266             | 334            | 34.97      | 2.02        | No_Machine_Failure |
+| 31-03-2022 | Makino-L3-Unit1-2015 | Shopfloor-L3     | 123.62                  | 5.0744                | 6.039                    | 4.5                | 51.5                         | 32.1                            | 0.69                 | 16.972            | 20413             | 278            | 32.52      | 2.88        | No_Machine_Failure |
+
+
+
 ### Columns and Their Meanings
 1. **Date**: Recording date of machine performance data
 2. **Machine_ID**: Unique identifier for each machine
