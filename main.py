@@ -43,7 +43,7 @@ async def upload_file(file: UploadFile = File(...)):
         # Handling missing values: Imputing numerical columns with mean
         imputer = SimpleImputer(strategy='mean')
 
-        # Imputing all numeric features first before converting Downtime
+        # Imputing all numeric features before converting Downtime
         numeric_columns = df.select_dtypes(include=['float64', 'int64']).columns.tolist()
         df[numeric_columns] = imputer.fit_transform(df[numeric_columns])
 
