@@ -27,7 +27,7 @@ async def upload_file(file: UploadFile = File(...)):
         # Reading the CSV file using pandas
         df = pd.read_csv(io.StringIO(contents.decode('utf-8')))
 
-        # Validating if the necessary columns exist
+        # Validating the necessary columns existed
         required_columns = [
             'Date', 'Machine_ID', 'Assembly_Line_No', 
             'Hydraulic_Pressure(bar)', 'Coolant_Pressure(bar)',
